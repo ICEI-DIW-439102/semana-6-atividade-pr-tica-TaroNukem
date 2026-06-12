@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f1e8;
+    color: #2e2e2e;
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #e8dfcf;
+    border-right: 1px solid #d6cbb5;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #3a3a3a;
+    padding: 8px;
+    display: block;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background-color: #d6cbb5;
+}
+
+
+.principal {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+
+.cabecalho {
+    margin-bottom: 10px;
+}
+
+.busca input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.busca button {
+    padding: 8px;
+    background-color: #c7a17a;
+    color: white;
+    border: none;
+}
+
+.banner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: -60px;
+    padding: 20px;
+}
+
+.perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+.lista-livros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.card-livro {
+    width: 100%;
+    max-width: 200px;
+    background-color: #fffdf8;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card-livro:hover {
+    transform: scale(1.05);
+}
+
+.card-livro img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-livro h2 {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.card-livro p {
+    font-size: 13px;
+    color: #555;
+}
+
+.rodape {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #e8dfcf;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+.menu {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.principal {
+    margin-left: 200px;
+}
+
+.principal {
+    margin-left: 0;
+}
+
+.perfil {
+    display: flex;
+}
+
+.perfil {
+    flex-direction: column;
+    text-align: center;
+}
+
+.lista-livros {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.lista-livros {
+    grid-template-columns: 1fr;
+}
+
+.banner img {
+    height: 180px;
+}
+
+
+}
